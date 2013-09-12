@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-	FizzBuzz fb;
+	private FizzBuzz fb;
 	
 	@Before
 	public void setup() {
