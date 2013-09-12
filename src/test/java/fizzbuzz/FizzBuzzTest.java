@@ -29,5 +29,14 @@ public class FizzBuzzTest {
 	{
 		assertEquals("Fizz",fb.generar(6));
 	}
-
+	
+	@Test 
+	public void imprimeBuzzSiNumero5(){
+		assertEquals("Buzz",fb.generar(5));
+	}
+	
+	@Test
+	public void imprimeBuzzSiEsMultiplo5(){
+		assertEquals("Buzz",fb.generar(10));
+	}
 }
