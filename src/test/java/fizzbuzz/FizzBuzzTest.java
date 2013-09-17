@@ -14,29 +14,44 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void imprimeFizzSiNumeroEs3() {
+	public void generaFizzSiNumeroEs3() {
 		assertEquals("Fizz",fb.generar(3));
 	}
 	
 	@Test
-	public void imprimeElMismoNumeroSiNoEs3()
+	public void generaElMismoNumeroSiNoEs3()
 	{
 		assertEquals("4",fb.generar(4));
 	}
 	
 	@Test
-	public void imprimeFizzSiEsMultiploDe3()
+	public void generaFizzSiEsMultiploDe3()
 	{
 		assertEquals("Fizz",fb.generar(6));
 	}
 	
 	@Test 
-	public void imprimeBuzzSiNumero5(){
+	public void generaBuzzSiNumero5(){
 		assertEquals("Buzz",fb.generar(5));
 	}
 	
 	@Test
-	public void imprimeBuzzSiEsMultiplo5(){
+	public void generaBuzzSiEsMultiplo5(){
 		assertEquals("Buzz",fb.generar(10));
 	}
+	
+	@Test
+	public void generaFizzBuzzPara15(){
+		assertEquals("FizzBuzz",fb.generar(15));
+	}
+	
+	@Test
+	public void imprimeFizzBuzzParaMultiploDe3y5(){
+		assertEquals("FizzBuzz",fb.generar(30));
+		assertEquals("FizzBuzz", fb.generar(60));
+	}
+	
+	
+
+	
 }
