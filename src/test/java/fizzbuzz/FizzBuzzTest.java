@@ -46,9 +46,27 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void imprimeFizzBuzzParaMultiploDe3y5(){
+	public void generaFizzBuzzParaMultiploDe3y5(){
 		assertEquals("FizzBuzz",fb.generar(30));
 		assertEquals("FizzBuzz", fb.generar(60));
+	}
+	
+	@Test
+	public void generaElNumeroSiNoEsMultiploDe3Ni5(){
+		assertEquals("7", fb.generar(7));
+		assertEquals("8", fb.generar(8));
+	}
+
+	@Test
+	public void imprimeUnaSecuenciaDeNumerosConReglasFizzBuzz(){
+		String esperado =  "1\n"+
+			    			"2\n"+
+			    			"Fizz\n"+
+			    			"4\n"+
+			    			"Buzz\n" +
+			    			"Fizz\n";
+		assertEquals(esperado, fb.imprimir(6));
+			
 	}
 	
 	

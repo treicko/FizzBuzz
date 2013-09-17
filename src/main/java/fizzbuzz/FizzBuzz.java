@@ -22,4 +22,11 @@ public class FizzBuzz {
 		return numero % multiplo == 0;
 	}
 
+	public String imprimir(int maximo) {
+		String resultado = "";
+		for (int i = 1; i <= maximo; i++)
+			resultado = resultado + generar(i) + "\n";
+		return resultado;
+	}
+
 }
