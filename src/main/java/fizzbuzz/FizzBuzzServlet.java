@@ -11,7 +11,9 @@ public class FizzBuzzServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String hasta = request.getParameter("hasta");
-		response.getWriter().println("Se recibi— el parametro: " + hasta);
+		String parametro = request.getParameter("hasta");
+		FizzBuzz fb = new FizzBuzz();
+		int hasta = new Integer(parametro);
+		response.getWriter().println(fb.imprimir(hasta));
 	}
 }
